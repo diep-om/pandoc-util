@@ -1,0 +1,76 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<space>",
+    "vim.incsearch": true,
+    "vim.hlsearch": false,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.files.action.showActiveFileInExplorer"]
+        },
+        {
+            "before": ["<leader>", "f", "q"],
+            "commands": ["workbench.action.closeSidebar"]
+        },
+        {
+            "before": ["<leader>", "f", "w"],
+            "commands": ["workbench.action.focusSideBar"]
+        },
+        {
+            "before": ["<leader>", "f", "o"],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.focusSideBar"
+            ]
+        },
+        {
+            "before": ["<leader>", "r", "a"],
+            "commands": ["workbench.action.tasks.reRunTask"]
+        },
+        {
+            "before": ["<leader>", "r", "r"],
+            "commands": ["workbench.action.tasks.runTask"]
+        },
+        {
+            "before": ["<leader>", "s", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": [":tabp"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": [":tabn"]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-k>", "k"],
+            "commands": ["editor.emmet.action.expandAbbreviation"]
+        },
+        {
+            "before": ["<C-k>", "n"],
+            "commands": ["editor.emmet.action.nextEditPoint"]
+        },
+        {
+            "before": ["<C-k>", "p"],
+            "commands": ["editor.emmet.action.prevEditPoint"]
+        }
+    ],
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+        "markdown": "xml"
+    },
+    "redhat.telemetry.enabled": false,
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 1
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "key": "o",
+        "command": "explorer.openAndPassFocus",
+        "when": "sideBarFocus && !inputFocus",
+    },
+    {
+        "key": "q",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarFocus && !inputFocus",
+    },
+    {
+        "key": "n f",
+        "command": "explorer.newFile",
+        "when": "sideBarFocus && !inputFocus",
+    },
+    {
+        "key": "n d",
+        "command": "explorer.newFolder",
+        "when": "sideBarFocus && !inputFocus",
+    },
+]

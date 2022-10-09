@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "$0 <pdf> <markdown doc> [pandoc OPTIONS]"
+}
+
+pdf() {
+  pandoc "$1" -t pdf -o "$(basename "${1%.*}.pdf")" \
+    -f markdown \
+    --pdf-engine=xelatex \
+    -V documentclass=article \
+    -V pagesize=a4 \
+    -V fontsize=12pt \
+    -V pagestyle=empty \
+    -V header-includes='\frenchspacing' \
+    -V geometry:margin=1in \
+    "${@:2}"
+}
+
+if [ $# -eq 0 ]; then
+  usage
+  exit 0
+fi
+
+case "$1" in
+  -h|--help) usage ;;
+  pdf) pdf "${@:2}" ;;
+  *) usage ;;
+esac
