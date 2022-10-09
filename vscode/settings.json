@@ -1,8 +1,20 @@
 {
     "workbench.colorTheme": "Solarized Dark",
-    "editor.minimap.enabled": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.startupEditor": "none",
+    "breadcrumbs.enabled": false,
+    "editor.detectIndentation": false,
     "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "security.workspace.trust.untrustedFiles": "open",
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": false,
+    "zenMode.fullScreen": false,
     "vim.leader": "<space>",
+    "vim.smartRelativeLine": true,
     "vim.incsearch": true,
     "vim.hlsearch": false,
     "vim.ignorecase": true,
@@ -10,6 +22,10 @@
     "vim.easymotion": true,
     "vim.surround": true,
     "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "g", "s"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
         {
             "before": ["<leader>", "f", "f"],
             "commands": ["workbench.files.action.showActiveFileInExplorer"]
@@ -50,6 +66,26 @@
             "commands": [":tabn"]
         }
     ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+    ],
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": ["<C-k>", "k"],
@@ -68,9 +104,4 @@
     "emmet.includeLanguages": {
         "markdown": "xml"
     },
-    "redhat.telemetry.enabled": false,
-    "workbench.startupEditor": "none",
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.wordWrap": "on",
-    "window.zoomLevel": 1
 }

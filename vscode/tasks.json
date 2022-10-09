@@ -12,6 +12,9 @@
                 "kind": "build",
                 "isDefault": false,
             },
+            "presentation": {
+              "reveal": "silent",
+            },
         },
         {
             "label": "panpdf with OPTIONS",
@@ -27,6 +30,9 @@
             "runOptions": {
                 "reevaluateOnRerun": false
             }
+            "presentation": {
+              "reveal": "silent",
+            },
         },
     ],
     "inputs": [
