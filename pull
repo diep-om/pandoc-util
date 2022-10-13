@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -v
+cp ~/app/bin/pand bin
+cp ~/Library/Application\ Support/Code/User/*.json vscode
