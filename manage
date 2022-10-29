@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+usage() {
+    echo "$0 <pull|push>"
+}
+
+DIR_VSCODE_USER="$HOME/Library/Application Support/Code/User"
+DIR_APP_BIN="$HOME/app/bin"
+
+pull() {
+    set -v
+    cp "$DIR_APP_BIN"/pand bin
+    cp "$DIR_VSCODE_USER"/*.json vscode
+}
+
+push() {
+    set -v
+    cp bin/pand "$DIR_APP_BIN"
+    cp vscode/*.json "$DIR_VSCODE_USER"
+}
+
+case "$1" in
+    help|h) usage ;;
+    pull) pull ;;
+    push) push ;;
+    *) usage ;;
+esac
