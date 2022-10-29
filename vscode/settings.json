@@ -3,6 +3,7 @@
     "workbench.editor.tabSizing": "shrink",
     "workbench.startupEditor": "none",
     "breadcrumbs.enabled": false,
+    "explorer.autoReveal": false,
     "editor.detectIndentation": false,
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,

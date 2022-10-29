@@ -1,22 +1,32 @@
 [
     {
         "key": "o",
+        "command": "list.toggleExpand",
+        "when": "explorerViewletVisible && filesExplorerFocus && explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "o",
         "command": "explorer.openAndPassFocus",
-        "when": "sideBarFocus && !inputFocus",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus",
+    },
+    {
+        "key": "p",
+        "command": "list.focusParent",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus",
     },
     {
         "key": "q",
         "command": "workbench.action.closeSidebar",
-        "when": "sideBarFocus && !inputFocus",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus",
     },
     {
         "key": "n f",
         "command": "explorer.newFile",
-        "when": "sideBarFocus && !inputFocus",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus",
     },
     {
         "key": "n d",
         "command": "explorer.newFolder",
-        "when": "sideBarFocus && !inputFocus",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus",
     },
 ]
